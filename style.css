@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -11,7 +13,7 @@
 }
 
 body {
-  font-family: "San Francisco";
+  font-family: "San Francisco", sans-serif;
 }
 
 .main-container {
@@ -87,7 +89,7 @@ body {
 }
 
 .nav-bar button {
-  font-family: "San Francisco";
+  font-family: "San Francisco", sans-serif;
   color: white;
   flex-basis: 120px;
   height: 40px;
@@ -128,14 +130,14 @@ body {
     cursor: text;
   }
 
-.nav-bar .search-bar input:focus {
-  background: white;
-}
-
 .search-bar input {
   background: transparent;
   border: none;
   width: 80%;
+}
+
+.nav-bar .search-bar input:focus {
+  background: white;
 }
 
 .nav-bar button:hover {
@@ -155,7 +157,7 @@ body {
 }
 
 .main-footer * {
-  font-family: "San Francisco";
+  font-family: "San Francisco", sans-serif;
   font-size: 12px;
   margin: 5px;
 }
