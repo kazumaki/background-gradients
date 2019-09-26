@@ -1,13 +1,25 @@
 *, *:before, *:after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+body {
+  font-family: "San Francisco";
 }
 
 .main-container {
   display: flex;
   flex-wrap: wrap;
   min-width: 1200px;
+  max-width: 1500px;
+  margin: 0 auto;
   row-gap: 5px;
 }
 
@@ -24,7 +36,7 @@
 .bottom-box {
   margin-top: 2px;
   margin-right: 2px;
-  flex-basis: 200px;
+  flex-basis: 295px;
   height: 200px;
   flex-shrink: 1;
   flex-grow: 1;
@@ -44,4 +56,54 @@
 
 .four {
   background: url("images/promo_supplier_responsibility.jpg") no-repeat center;
+}
+
+.nav-bar {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-bar button {
+  font-family: "San Francisco";
+  border: none;
+  color: white;
+  flex-basis: 120px;
+  height: 40px;
+  background: linear-gradient(#808080 0%, #707070 50%, #383838 50%, #808080);
+  border: solid 1px #787878;
+  cursor: pointer;
+}
+
+.nav-bar button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.nav-bar .search-container {
+  display: flex;
+  background: linear-gradient(#808080 0%, #707070 50%, #383838 50%, #808080);
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar .search-bar {
+  display: flex;
+  border: solid 2px grey;
+  width: 80%;
+  flex-wrap: nowrap;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  width: 80%;
+}
+
+.nav-bar button:hover {
+  background: linear-gradient(#484848 0%, #707070 50%, #383838 50%, #484848);
 }
