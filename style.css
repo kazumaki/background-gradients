@@ -41,7 +41,7 @@ body {
   flex-basis: 100%;
 }
 
-.main-background main {
+.main-background .main-text {
   flex-basis: 80%;
   text-align: center;
   font-size: 2em;
